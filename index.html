@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flash USDT Panel</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <link rel="icon" href="logo.png">
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f4f4f4; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    input, button { padding: 10px; margin: 10px 0; width: 100%; }
+    h2 { color: #444; }
+    img.logo { width: 80px; display: block; margin: 0 auto 20px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <img src="logo.png" alt="USDT Logo" class="logo">
+  <h2>Flash USDT Control Panel</h2>
+  <p><strong>Wallet:</strong> <span id="wallet">Not connected</span></p>
+  <p><strong>Balance:</strong> <span id="balance">0</span> USDT</p>
+
+  <h3>Mint Tokens</h3>
+  <input type="text" id="mintTo" placeholder="Recipient address">
+  <input type="number" id="mintAmount" placeholder="Amount">
+  <button onclick="mintTokens()">Mint</button>
+
+  <h3>Transfer Tokens</h3>
+  <input type="text" id="transferTo" placeholder="Recipient address">
+  <input type="number" id="transferAmount" placeholder="Amount">
+  <button onclick="transferTokens()">Transfer</button>
+
+  <h3>Set Expiry</h3>
+  <input type="text" id="expiryAccount" placeholder="Address to expire">
+  <input type="number" id="expiryDays" placeholder="Days from now">
+  <button onclick="setExpiry()">Set Expiry</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
