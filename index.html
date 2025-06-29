@@ -11,12 +11,20 @@
   <div class="container">
     <img src="logo.png" alt="Logo" class="logo">
     <h1>Flash USDT Control Panel</h1>
-    <button onclick="connectWallet()">🔌 Connect Wallet</button>
-    <button onclick="mint()">💸 Mint</button>
-    <button onclick="transfer()">📤 Transfer</button>
-    <button onclick="setExpiry()">⏳ Set Expiry</button>
+    <button id="connectBtn">🔌 Connect Wallet</button>
+    <button id="mintBtn">💸 Mint</button>
+    <button id="transferBtn">📤 Transfer</button>
+    <button id="expiryBtn">⏳ Set Expiry</button>
     <div id="status"></div>
   </div>
+
+  <!-- ✅ include AFTER body so functions load -->
   <script src="script.js"></script>
+  <script>
+    document.getElementById("connectBtn").onclick = connectWallet;
+    document.getElementById("mintBtn").onclick = mint;
+    document.getElementById("transferBtn").onclick = transfer;
+    document.getElementById("expiryBtn").onclick = setExpiry;
+  </script>
 </body>
 </html>
