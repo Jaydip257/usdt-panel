@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flash USDT Panel</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.8.2/dist/web3.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Token Logo" class="logo">
+    <h1>Flash USDT Control Panel</h1>
+    <button onclick="connectWallet()">🔌 Connect Wallet</button>
+    <button onclick="mint()">💸 Mint</button>
+    <button onclick="transfer()">📤 Transfer</button>
+    <button onclick="setExpiry()">⏳ Set Expiry</button>
+    <div id="status"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
