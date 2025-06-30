@@ -1,2 +1,0 @@
-# usdt-panel
-tether usdt
